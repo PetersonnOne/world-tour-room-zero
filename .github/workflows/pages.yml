@@ -1,5 +1,11 @@
 name: Publish playable release
 on:
+  push:
+    branches: [main]
+    paths:
+      - room-zero-release.zip
+      - room-zero-release.sha256
+      - .github/workflows/pages.yml
   workflow_dispatch:
 permissions:
   contents: read
